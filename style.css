@@ -17,10 +17,34 @@ font-family: 'Marvel', sans-serif;
 
 /*HEADER*/
 
-
+header
+{
+    height: 120px;
+    background-color: #444;
+    border-bottom: 2px solid #fff;
+    box-shadow: 0px 0px 15px #333;
+}
 
 
 /*BODY*/
+section:nth-child(2){
+  width: 100%;
+  height: 60vh;
+  /*background-image: url(images/hulk.png);
+  background-size: cover;
+  background-position: center;*/
+}
+
+section.imgperso img{
+  width: 100%;
+  height: 100%;
+  object-fit: scale-down;
+}
+
+section.textperso{
+  font-family: Arial, Helvetica, sans-serif;
+  margin-left: 5px;
+}
 
 
 
@@ -111,19 +135,35 @@ label img {
 /*FOOTER*/
 
 
-
+footer
+{
+    height: 260px;
+    background-color: #444;
+    border-top: 2px solid #fff;
+    box-shadow: 0px 0px 15px #333;
+}
 
 
 
 /*VERSION BUREAU*/
 
-@media screen and(min-width: 760px) {
-    
+@media screen and (min-width: 760px) {
+  section.imgperso img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+  }
 }
 
 
 
 
-@media screen and(min-width: 1200px){
-    
+@media screen and (min-width: 1200px){
+  section.imgperso img{
+    width: 100%;
+    height: 100%;
+    object-fit: none;
+    object-position: top;
+  }
 }
