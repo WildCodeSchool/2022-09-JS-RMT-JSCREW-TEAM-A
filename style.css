@@ -1,0 +1,12 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* font pour le background: css */
+header {
+font-family: 'Marvel', sans-serif;
+}
