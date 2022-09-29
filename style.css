@@ -152,7 +152,7 @@ footer
     width: 100%;
     height: 100%;
     object-fit: cover;
-    object-position: top;
+    object-position: top; /*réglages hauteur image pour visage non centré*/
   }
 }
 
@@ -163,7 +163,7 @@ footer
   section.imgperso img{
     width: 100%;
     height: 100%;
-    object-fit: none;
-    object-position: top;
+    object-fit: cover;
+    object-position: top; /*réglages hauteur image pour visage non centré*/
   }
 }
