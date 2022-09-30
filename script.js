@@ -1,3 +1,4 @@
+
 //Nav menu
 
 const btnNav = document.querySelector('.nav-mobile');
@@ -36,3 +37,5 @@ btnNav.addEventListener('click', () => {
     }
 
 })
+
+
