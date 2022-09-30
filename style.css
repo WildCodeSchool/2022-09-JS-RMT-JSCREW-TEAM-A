@@ -17,7 +17,7 @@ font-family: 'Marvel', sans-serif;
 
 /*HEADER*/
 
-header
+.testHeader
 {
     height: 120px;
     background-color: #444;
@@ -135,7 +135,7 @@ label img {
 /*FOOTER*/
 
 
-footer
+.testFooter
 {
     height: 260px;
     background-color: #444;
