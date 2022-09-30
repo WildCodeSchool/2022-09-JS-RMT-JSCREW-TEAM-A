@@ -1,186 +1,126 @@
-
-*,
-::before,
-::after {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+/* ************Footer*********** */
+.col_white_amrc {
+  color: #FFF;
 }
 
-/* font pour le background: css */
-
-header {
-font-family: 'Marvel', sans-serif;
-}
-
-
-/*********** Main Homepage **************/
-
-img {
-  width: 80%;
-  height: 50vh;
-}
-
-
-.personnages {
-text-align: center;
-width: 100%;
-height: 100%;
-}
-
-.Stan lee {
-}
-
-
-@media screen and (min-width: 600px) {
-  .personnages {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    flex: 1;
-    }
-  .StanLee {
-    display: flex;
-    flex: 1;
-    grid-column-start: 1;
-    grid-column-end: 3;
-  }
- .spiderman {
-display: flex;
-flex: 1;
- }
- .batman {
-  display: flex;
-  flex: 1;
- }
- .hulk {
-  display: flex;
-  flex: 1;
- }
- .thor {
-  display: flex;
-  flex: 1;
- }
- .wolverine {
-  display: flex;
-  flex: 1;
- }
-}
-
-
-/*GENERAL*/
-
-
-
-/*HEADER*/
-
-
-
-
-/*BODY*/
-
-
-
-/*CARROUSEL*/
-
-@import url("https://fonts.googleapis.com/css?family=DM+Sans:400,500,700&display=swap");
-
-html, body {
-  margin: 0;
-  padding: 0;
+footer {
   width: 100%;
-  height: 100%;
+  background-color: #263238;
+  min-height: 250px;
+  padding: 10px 0px 25px 0px;
 }
 
-section.carrousel {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 30px 10px;
-  font-family: 'DM Sans', sans-serif;
-  transition: background .4s ease-in;
-  background-color: #ededed;
-
-}
-
-input[type=radio] {
-  display: none;
-}
-
-.card {
-  position: absolute;
-  width: 60%;
-  height: 100%;
-  left: 0;
-  right: 0;
-  margin: auto;
-  transition: transform .4s ease;
-  cursor: pointer;
-}
-
-.container {
-  width: 100%;
-  max-width: 800px;
-  max-height: 600px;
-  height: 100%;
-  transform-style: preserve-3d;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-}
-
-.cards {
-  position: relative;
-  width: 100%;
-  height: 100%;
+.pt2 {
+  padding-top: 40px;
   margin-bottom: 20px;
 }
 
-label img {
-  width: 100%;
-  height: 100%;
-  border-radius: 10px;
-  object-fit: cover;
-  background-image: cover;
+footer p {
+  font-size: 13px;
+  color: #CCC;
+  padding-bottom: 0px;
+  margin-bottom: 8px;
 }
 
-#item-1:checked ~ .cards #song-3, #item-2:checked ~ .cards #song-1, #item-3:checked ~ .cards #song-2 {
-  transform: translatex(-40%) scale(.8);
-  opacity: .4;
-  z-index: 0;
+.mb10 {
+  padding-bottom: 15px;
 }
 
-#item-1:checked ~ .cards #song-2, #item-2:checked ~ .cards #song-3, #item-3:checked ~ .cards #song-1 {
-  transform: translatex(40%) scale(.8);
-  opacity: .4;
-  z-index: 0;
+.footer_ul_amrc {
+  margin: 0px;
+  list-style-type: none;
+  font-size: 14px;
+  padding: 0px 0px 10px 0px;
 }
 
-#item-1:checked ~ .cards #song-1, #item-2:checked ~ .cards #song-2, #item-3:checked ~ .cards #song-3 {
-  transform: translatex(0) scale(1);
-  opacity: 1;
-  z-index: 1;
+.footer_ul_amrc li {
+  padding: 0px 0px 5px 0px;
 }
 
-
-
-/*FOOTER*/
-
-
-
-
-
-
-/*VERSION BUREAU*/
-
-@media screen and(min-width: 760px) {
-    
+.footer_ul_amrc li a {
+  color: #CCC;
 }
 
-
-
-
-@media screen and(min-width: 1200px){
-    
+.footer_ul_amrc li a:hover {
+  color: #fff;
+  text-decoration: none;
 }
 
+.fleft {
+  float: left;
+}
+
+.padding-right {
+  padding-right: 10px;
+}
+
+.footer_ul2_amrc {
+  margin: 0px;
+  list-style-type: none;
+  padding: 0px;
+}
+
+.footer_ul2_amrc li p {
+  display: table;
+}
+
+.footer_ul2_amrc li a:hover {
+  text-decoration: none;
+}
+
+.footer_ul2_amrc li i {
+  margin-top: 5px;
+}
+
+.bottom_border {
+  border-bottom: 1px solid #323f45;
+  padding-bottom: 20px;
+}
+
+.foote_bottom_ul_amrc {
+  list-style-type: none;
+  padding: 0px;
+  display: table;
+  margin-top: 10px;
+  margin-right: auto;
+  margin-bottom: 10px;
+  margin-left: auto;
+}
+
+.foote_bottom_ul_amrc li {
+  display: inline;
+}
+
+.foote_bottom_ul_amrc li a {
+  color: #999;
+  margin: 0 12px;
+}
+
+.social_footer_ul {
+  display: table;
+  margin: 15px auto 0 auto;
+  list-style-type: none;
+}
+
+.social_footer_ul li {
+  padding-left: 20px;
+  padding-top: 10px;
+  float: left;
+}
+
+.social_footer_ul li a {
+  color: #CCC;
+  border: 1px solid #CCC;
+  padding: 8px;
+  border-radius: 50%;
+}
+
+.social_footer_ul li i {
+  width: 20px;
+  height: 20px;
+  text-align: center;
+}
+
+form {
+  color: #999;
+}
