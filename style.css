@@ -1,10 +1,3 @@
-footer {
-  width: 100%;
-  background-color: #263238;
-  min-height: 250px;
-  padding: 10px 0px 25px 0px;
-}
-
 /* font pour le background: css */
 
 
@@ -209,15 +202,16 @@ label img {
 
 /*FOOTER*/
 
-
 footer {
-  height: 260px;
-  background-color: #444;
-  border-top: 2px solid #fff;
-  box-shadow: 0px 0px 15px #333;
+  width: 100%;
+  background-color: #263238;
+  min-height: 250px;
+  padding: 10px 0px 25px 0px;
 }
 
-.col_white_amrc {
+
+
+.col_white {
   color: #FFF;
 }
 
@@ -238,22 +232,22 @@ footer p {
   padding-bottom: 15px;
 }
 
-.footer_ul_amrc {
+.footer_ul {
   margin: 0px;
   list-style-type: none;
   font-size: 14px;
   padding: 0px 0px 10px 0px;
 }
 
-.footer_ul_amrc li {
+.footer_ul li {
   padding: 0px 0px 5px 0px;
 }
 
-.footer_ul_amrc li a {
+.footer_ul li a {
   color: #CCC;
 }
 
-.footer_ul_amrc li a:hover {
+.footer_ul li a:hover {
   color: #fff;
   text-decoration: none;
 }
@@ -267,21 +261,21 @@ footer p {
   padding-right: 10px;
 }
 
-.footer_ul2_amrc {
+.footer_ul {
   margin: 0px;
   list-style-type: none;
   padding: 0px;
 }
 
-.footer_ul2_amrc li p {
+.footer_ul li p {
   display: table;
 }
 
-.footer_ul2_amrc li a:hover {
+.footer_ul li a:hover {
   text-decoration: none;
 }
 
-.footer_ul2_amrc li i {
+.footer_ul li i {
   margin-top: 5px;
 }
 
@@ -290,7 +284,7 @@ footer p {
   padding-bottom: 20px;
 }
 
-.foote_bottom_ul_amrc {
+.foote_bottom_ul {
   list-style-type: none;
   padding: 0px;
   display: table;
@@ -300,11 +294,11 @@ footer p {
   margin-left: auto;
 }
 
-.foote_bottom_ul_amrc li {
+.foote_bottom_ul li {
   display: inline;
 }
 
-.foote_bottom_ul_amrc li a {
+.foote_bottom_ul li a {
   color: #999;
   margin: 0 12px;
 }
