@@ -8,7 +8,7 @@
 
 /* font pour le background: css */
 header {
-font-family: 'Marvel', sans-serif;
+  font-family: 'Marvel', sans-serif;
 }
 
 /*GENERAL*/
@@ -17,17 +17,21 @@ font-family: 'Marvel', sans-serif;
 
 /*HEADER*/
 
-header
-{
-    height: 120px;
-    background-color: #444;
-    border-bottom: 2px solid #fff;
-    box-shadow: 0px 0px 15px #333;
+header {
+  height: 120px;
+  background-color: #444;
+  border-bottom: 2px solid #fff;
+  box-shadow: 0px 0px 15px #333;
 }
 
 
 /*BODY*/
-section:nth-child(2){
+
+section.imgprez {
+  text-align: center;
+}
+
+section:nth-child(2) {
   width: 100%;
   height: 60vh;
   /*background-image: url(images/hulk.png);
@@ -35,13 +39,13 @@ section:nth-child(2){
   background-position: center;*/
 }
 
-section.imgperso img{
+section.imgperso img {
   width: 100%;
   height: 100%;
   object-fit: scale-down;
 }
 
-section.textperso{
+section.textperso {
   font-family: Arial, Helvetica, sans-serif;
   margin-left: 5px;
 }
@@ -52,7 +56,8 @@ section.textperso{
 
 @import url("https://fonts.googleapis.com/css?family=DM+Sans:400,500,700&display=swap");
 
-html, body {
+html,
+body {
   margin: 0;
   padding: 0;
   width: 100%;
@@ -86,10 +91,10 @@ input[type=radio] {
 }
 
 .container {
-  width: 100%;
-  max-width: 800px;
-  max-height: 600px;
-  height: 100%;
+  width: 800px;
+  /*max-width: 800px;
+  max-height: 1000px;*/
+  height: 400px;
   transform-style: preserve-3d;
   display: flex;
   justify-content: center;
@@ -109,22 +114,29 @@ label img {
   height: 100%;
   border-radius: 10px;
   object-fit: cover;
-  background-image: cover;
+  object-position: top;
+
 }
 
-#item-1:checked ~ .cards #song-3, #item-2:checked ~ .cards #song-1, #item-3:checked ~ .cards #song-2 {
+#item-1:checked~.cards #song-3,
+#item-2:checked~.cards #song-1,
+#item-3:checked~.cards #song-2 {
   transform: translatex(-40%) scale(.8);
   opacity: .4;
   z-index: 0;
 }
 
-#item-1:checked ~ .cards #song-2, #item-2:checked ~ .cards #song-3, #item-3:checked ~ .cards #song-1 {
+#item-1:checked~.cards #song-2,
+#item-2:checked~.cards #song-3,
+#item-3:checked~.cards #song-1 {
   transform: translatex(40%) scale(.8);
   opacity: .4;
   z-index: 0;
 }
 
-#item-1:checked ~ .cards #song-1, #item-2:checked ~ .cards #song-2, #item-3:checked ~ .cards #song-3 {
+#item-1:checked~.cards #song-1,
+#item-2:checked~.cards #song-2,
+#item-3:checked~.cards #song-3 {
   transform: translatex(0) scale(1);
   opacity: 1;
   z-index: 1;
@@ -135,12 +147,11 @@ label img {
 /*FOOTER*/
 
 
-footer
-{
-    height: 260px;
-    background-color: #444;
-    border-top: 2px solid #fff;
-    box-shadow: 0px 0px 15px #333;
+footer {
+  height: 260px;
+  background-color: #444;
+  border-top: 2px solid #fff;
+  box-shadow: 0px 0px 15px #333;
 }
 
 
@@ -148,22 +159,41 @@ footer
 /*VERSION BUREAU*/
 
 @media screen and (min-width: 760px) {
-  section.imgperso img{
+  section.imgperso img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    object-position: top; /*réglages hauteur image pour visage non centré*/
+    object-position: top;
+    /*réglages hauteur image pour visage non centré*/
+  }
+
+  .container {
+    height: 800px;
+
+  }
+
+  label img {
+    object-fit: fill;
+    background-image: cover;
   }
 }
 
-
-
-
-@media screen and (min-width: 1200px){
-  section.imgperso img{
+@media screen and (min-width: 1200px) {
+  section.imgperso img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    object-position: top; /*réglages hauteur image pour visage non centré*/
+    object-position: top;
+    /*réglages hauteur image pour visage non centré*/
+  }
+
+  .container {
+    height: 1000px;
+    width: 1000px;
+  }
+
+  label img {
+    object-fit: fill;
+    background-image: cover;
   }
 }
