@@ -12,17 +12,24 @@ header {
 font-family: 'Marvel', sans-serif;
 }
 
+
+/*********** Main Homepage **************/
+
+img {
+  width: 80%;
+  height: 50vh;
+}
+
+
 .personnages {
 text-align: center;
 width: 100%;
 height: 100%;
 }
-.personnages img {
-  object-fit: cover;
-  object-position: center;
-  width: 100%;
-  height: 400px;
+
+.Stan lee {
 }
+
 
 @media screen and (min-width: 600px) {
   .personnages {
