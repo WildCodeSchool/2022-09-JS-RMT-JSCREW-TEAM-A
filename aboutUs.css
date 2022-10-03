@@ -5,24 +5,20 @@
 }
 
 body {
-    background-color: #f1f1f1;
-    height: 100vh;
+    background-color: #261758;
+
 }
 
 .container {
-    width: 80%;
-    margin: auto;
-    height: 70%;
-    background-color: #f1f1f1;
     border-radius: 5px;
+    padding: 5vh;
+    padding-bottom: 5vh;
 }
 
 .containerOnglets {
-    background-color: #f1f1f1;
-    width: 100%;
+    width: 75vw;
     height: 10vh;
     display: flex;
-    border-radius: 5px;
 }
 
 .onglet {
@@ -31,23 +27,52 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     font-weight: bold;
     cursor: pointer;
+    background-color: #887CAF;
+    color: #13073A;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 .contenu {
-    width: 75%;
-    height: 100%-10vh;
     position: absolute;
+    width: 75vw;
+    background-color: #887CAF;
+    color: #13073A;
+    border-radius: 5px;
     opacity: 0;
+    height: auto;
+    position: absolute;
+    width: 75vw;
+    background-color: #887CAF;
+    color: #13073A;
+    border-radius: 5px;
+}
+
+.contenu:nth-child(2)>p {
+    font-size: 1.5rem;
+    padding-left: 10px;
+}
+
+div:nth-child(2) li {
+    list-style-type: none;
+}
+
+div:nth-child(2) li>p {
+    font-size: 1.5rem;
+    font-family: 'Marvel', sans-serif;
+}
+
+div:nth-child(3) p {
+    font-size: 1.5rem;
+    padding: 0px 10px 0 10px;
 }
 
 .active {
-    color: #f1f1f1;
-    background-color: midnightblue;
+    color: #887CAF;
+    background-color: #13073A;
     transition: all 0.3s ease;
 }
 
@@ -62,5 +87,45 @@ body {
 
     To {
         opacity: 1;
+    }
+}
+
+@media all and (min-width: 1000px) {
+
+    .containerOnglets {
+        margin: auto;
+    }
+
+    .contenu {
+        left: 12.5%
+    }
+
+    .contenu:nth-child(2) ul {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+
+    .contenu:nth-child(2)>p {
+        font-size: 2.5rem;
+    }
+
+    .contenu:nth-child(2) li>p {
+        font-size: 2.2rem;
+    }
+
+    .contenu:nth-child(2) li:not(:last-child) {
+        margin-right: 5vw;
+    }
+
+    li {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contenu:nth-child(3) p {
+        font-size: 2rem;
+        padding: 0px 10px 0 10px;
     }
 }
