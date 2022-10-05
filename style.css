@@ -90,7 +90,6 @@ nav {
   transition: all 0.3s ease;
 }
 
-
 .background{
     
   background-image: url('./images/background-unsplash.jpg');
@@ -112,6 +111,10 @@ nav {
   .nav-links {
       width: 60%;
   }
+
+  
+
+
 }
 
 
@@ -141,6 +144,7 @@ nav {
     right: 2rem;
 
   }
+  
 }
 
 .nav-active{
@@ -504,11 +508,8 @@ label img {
     
   }
 
-
-
 }
-
-
+  
 /* Accueil Version desktop karim*/
 
 .content-perso{
@@ -622,5 +623,3 @@ article {
     height: 363px;
     cursor: pointer;
   }
-
-
