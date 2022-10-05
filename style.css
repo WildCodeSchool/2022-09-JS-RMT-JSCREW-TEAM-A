@@ -342,7 +342,6 @@ footer p {
   }
 
   .container_form{
-    background-color: red;
     height: 25vh;
   }
 
@@ -362,18 +361,6 @@ footer p {
     justify-content: center;
   }
 
-
-  .submit_form{
-    background-color: yellow;
-    width: 10%;
-    height: 10vh;
-
-  }
-
-  .inputarea{
-    background-color: purple;
-  }
-
   .social_footer_ul{
     width: 100%;
     display: inline-flex;
@@ -388,7 +375,35 @@ footer p {
 
 
 @media screen and (min-width: 1200px) {
-  
+  footer{
+    height: 60vh;
+  }
+
+  .container_bottom_border{
+    width: 45%;
+  }
+
+  .container_form{
+    height: 30vh;
+    width: 50%;
+    margin: 0;
+    border-bottom: none;
+  }
+
+
+  .inputarea{
+    width: 40%;
+    margin-left: auto;
+  }
+
+.positiondesktop{
+  width: 100%;
+  display: inline-flex;
+  justify-content: space-between;
+  border-bottom: 1.5px solid #999;
+
+}
+
 }
 
 
