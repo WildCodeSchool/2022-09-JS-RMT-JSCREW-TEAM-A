@@ -62,6 +62,7 @@ body {
 .contenu:nth-child(1) li>p {
     font-size: 2rem;
     font-family: 'Marvel', sans-serif;
+    font-weight: bold;
 }
 
 .contenu:nth-child(1) a {
@@ -69,11 +70,38 @@ body {
     cursor: pointer;
     text-decoration: none;
     color: #061c27;
+    display: block;
+    width: 6rem;
+    border-radius: 10px;
+    text-align: center;
+    background: linear-gradient(#bfb6c5, #0a5d72);
+    margin: auto;
+    line-height: 3rem;
+
+
+
+}
+
+.contenu:nth-child(1) a:hover {
+    background: linear-gradient(#0a5d72, #bfb6c5);
 }
 
 .contenu:nth-child(2) p {
     font-size: 1.5rem;
     padding: 0px 10px 0 10px;
+    text-align: center;
+}
+
+.contenu:nth-child(2) a {
+    text-decoration: none;
+    color: #0a5d72;
+    font-size: 1.5rem;
+    transition: all 0.5s ease;
+}
+
+.contenu:nth-child(2) a:hover {
+    color: purple;
+    text-decoration: underline;
 }
 
 .active {
@@ -97,7 +125,7 @@ body {
     }
 }
 
-@media all and (min-width: 1000px) {
+@media all and (min-width: 800px) {
 
     .contenu:nth-child(1) ul {
         display: flex;
@@ -112,18 +140,16 @@ body {
     .contenu:nth-child(1) li>p {
         font-size: 2.2rem;
         margin: 0;
+        margin-top: 10px;
     }
 
-    /*.contenu:nth-child(1) li:not(:last-child) {
-        margin-right: 5%;
-    }*/
-
-    li {
+    .contenu:nth-child(1) li {
         display: flex;
         flex-direction: column;
         align-items: center;
         height: 14rem;
         width: 40%;
+        margin: 0;
     }
 
     .contenu:nth-child(2) p {
@@ -131,9 +157,14 @@ body {
         padding: 0px 10px 0 10px;
     }
 
+
     .contenu:nth-child(1) li p,
     a {
         padding: 0;
+    }
+
+    .contenu:nth-child(2) a {
+        font-size: 2rem;
     }
 
     .contenu:nth-child(1) a {
