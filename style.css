@@ -265,23 +265,23 @@ section.textperso {
     grid-column-start: 1;
     grid-column-end: 3;
   }
- .spiderman {
-display: flex;
-flex: 1;
- }
- .batman {
+  .spiderman {
   display: flex;
   flex: 1;
- }
- .hulk {
+  }
+  .batman {
   display: flex;
   flex: 1;
- }
- .thor {
+  }
+  .hulk {
   display: flex;
   flex: 1;
- }
- .wolverine {
+  }
+  .thor {
+  display: flex;
+  flex: 1;
+  }
+  .wolverine {
   display: flex;
   flex: 1;
  }
@@ -489,7 +489,7 @@ label img {
   width: 20px;
 }
 
-article {
+article.stanLee  {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
@@ -530,9 +530,12 @@ article {
   margin: 0 auto;
   width: 100%;
   max-width: 1240px;
+  display: flex;
+  flex-wrap: wrap;
+
 }
 
-  a.home_dossier {
+a.home-dossier {
     display: inline-block;
     text-align: center;
     background-size: cover;
@@ -542,6 +545,55 @@ article {
     width: 50%;
     height: 363px;
     cursor: pointer;
+    overflow: hidden;
   }
 
+  .home-top-perso {
+    position: absolute;
+    top: 100px;
+  }
 
+  a.home-dossier .home-top-mask {
+    background-image: url('./images/home-top-mask.png');
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0px;
+    top: 0px;
+    background-position: bottom center;  
+  }
+
+  a.home-dossier .home-top-perso {
+    position: absolute;
+    width: 100%;
+    padding: 1.4rem;
+    bottom: 0px;
+    left: 0px;
+  }
+
+  a.home-dossier .home-top-date {
+    position: absolute;
+    width: 100%;
+    padding: 1.4rem;
+    bottom: 0px;
+    left: 0px;
+  }
+
+  a.home_dossier h2 {
+    color: #fff;
+    margin-bottom: -8px;
+    font-size: 0.92rem;
+    line-height: 0.95rem;
+    transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+  }
+
+  .home-auteur {
+    color: #fff;
+    font-size: 0.95rem;
+    text-transform: uppercase;
+    font-weight: 300;
+    font-family: 'Open Sans', sans-serif;
+    display: inline-block;
+    padding: 7px 15px 6px 15px;
+    position: relative;
+  }
