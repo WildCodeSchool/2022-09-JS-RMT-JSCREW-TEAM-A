@@ -205,7 +205,7 @@ label img {
 footer {
   width: 100%;
   background-color: #263238;
-  height: 110vh;
+  height: 100vh;
   color: #999;
 }
 
@@ -221,22 +221,52 @@ footer p {
 
 .container_form {
   width: 100%;
-  height: 45vh;
+  height: 35vh;
   padding-left: 20px;
   margin-top: 40px;
   border-bottom: 1px solid #999;
 }
 
 
+.form_personnel {
+  width: 55%;
+  height: 20vh;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.form_text {
+  display: flex;
+  justify-content: end;
+
+}
+
 .inputfoot {
-  width: 60%;
-  margin-bottom: 5px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+
 }
 
 .inputarea {
-  width: 90%;
+  width: 40%;
+  height: 20vh;
+  margin-right: 10px;
+  border-radius: 50% / 10%;
+  text-align: center;
 }
 
+.form_submit {
+  height: 40px;
+  margin-top: 20px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+
+}
 
 .footer_ul {
   margin: 0;
@@ -246,15 +276,12 @@ footer p {
 }
 
 
-.footer_ul li a:hover {
-  color: #fff;
-  text-decoration: none;
-}
-
 .footer_bottom_ul {
   width: 100%;
   list-style-type: none;
+  padding-top: 10px;
   display: flex;
+  justify-content: space-around;
 }
 
 
@@ -264,6 +291,7 @@ footer p {
 }
 
 .social_footer_ul {
+  height: 10vh;
   display: flex;
   justify-content: space-evenly;
   list-style-type: none;
@@ -274,6 +302,7 @@ footer p {
   color: #CCC;
   border: 1px solid #CCC;
   padding: 8px;
+  margin-top: 100px;
   border-radius: 25%;
 }
 
@@ -283,45 +312,61 @@ footer p {
   text-align: center;
 }
 
+.footer_copy {
+  margin-bottom: 20px;
+}
+
+
 
 /*VERSION BUREAU*/
 
 @media screen and (min-width: 760px) {
-  section.imgperso img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: top;
-    /*réglages hauteur image pour visage non centré*/
-  }
 
-  .container {
-    height: 800px;
+  @media screen and (min-width: 1200px) {
 
-  }
 
-  label img {
-    object-fit: fill;
-    background-image: cover;
-  }
-}
 
-@media screen and (min-width: 1200px) {
-  section.imgperso img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: top;
-    /*réglages hauteur image pour visage non centré*/
-  }
 
-  .container {
-    height: 1000px;
-    width: 1000px;
-  }
 
-  label img {
-    object-fit: fill;
-    background-image: cover;
-  }
-}
+
+    /*VERSION BUREAU*/
+
+    @media screen and (min-width: 760px) {
+      section.imgperso img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: top;
+        /*réglages hauteur image pour visage non centré*/
+      }
+
+      .container {
+        height: 800px;
+
+      }
+
+      label img {
+        object-fit: fill;
+        background-image: cover;
+      }
+    }
+
+    @media screen and (min-width: 1200px) {
+      section.imgperso img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: top;
+        /*réglages hauteur image pour visage non centré*/
+      }
+
+      .container {
+        height: 1000px;
+        width: 1000px;
+      }
+
+      label img {
+        object-fit: fill;
+        background-image: cover;
+      }
+    }
