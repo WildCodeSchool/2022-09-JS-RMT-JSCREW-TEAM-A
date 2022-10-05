@@ -131,7 +131,7 @@ section.carrousel {
 
 }
 
-input[type=radio] {
+inpurhtr[type=radio] {
   display: none;
 }
 
@@ -265,7 +265,12 @@ footer p {
   -webkit-border-radius: 10px;
   border-radius: 10px;
   cursor: pointer;
+  box-shadow: 0 9px black;
+}
 
+.form_submit:hover{
+  transform: translateY(3px);
+  box-shadow: 0 6px black;
 }
 
 .footer_ul {
@@ -304,6 +309,13 @@ footer p {
   padding: 8px;
   margin-top: 100px;
   border-radius: 25%;
+  box-shadow: 0 9px black;
+}
+
+.social_footer_ul li a :hover {
+  transform: translateY(3px);
+  box-shadow: 0 6px black;
+ 
 }
 
 .social_footer_ul li i {
@@ -318,11 +330,66 @@ footer p {
 
 
 
-/*VERSION BUREAU*/
+/* /VERSION BUREAU* Footer/ */
 
 @media screen and (min-width: 760px) {
+  footer{
+    height: 60vh;
+  }
 
-  @media screen and (min-width: 1200px) {
+  .form_footer{
+    height: 20vh;
+  }
+
+  .container_form{
+    background-color: red;
+    height: 25vh;
+  }
+
+  .form_personnel{
+    width: 30%;
+    height: 15vh;
+    justify-content: flex-start;
+  }
+
+
+#emailinput, #fornameinput, #nameinput {
+  width: 90%;
+  margin-bottom: 5px;
+}
+
+  .form_text{
+    justify-content: center;
+  }
+
+
+  .submit_form{
+    background-color: yellow;
+    width: 10%;
+    height: 10vh;
+
+  }
+
+  .inputarea{
+    background-color: purple;
+  }
+
+  .social_footer_ul{
+    width: 100%;
+    display: inline-flex;
+    justify-content: center;
+  }
+
+  .social_footer_ul li a {
+    margin: 0 20px;
+  }
+}
+
+
+
+@media screen and (min-width: 1200px) {
+  
+}
 
 
 
