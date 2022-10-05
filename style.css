@@ -494,7 +494,11 @@ article.stanLee  {
   flex-wrap: wrap;
 
 }
-
+@media (max-width: 768px) {
+.container-dossier {
+  padding: 0%;
+}
+}
   a.home-dossier {
     display: inline-block;
     text-align: center;
@@ -506,6 +510,13 @@ article.stanLee  {
     height: 60vh;
     cursor: pointer;
     overflow: hidden;
+  }
+  @media (max-width: 768px) {
+    a.home-dossier {
+    display: block;
+    width: 100%;
+    height: auto;
+    }
   }
   a.home-dossier:hover {
    transition:ease-in 0.3s;
@@ -533,7 +544,6 @@ article.stanLee  {
     bottom: 0px;
     left: 0px;
   }
-
   a.home-dossier .home-top-date {
     position: absolute;
     width: 100%;
@@ -541,7 +551,11 @@ article.stanLee  {
     bottom: 0px;
     left: 0px;
   }
-
+  @media (max-width: 768px) {
+    a.home-dossier .home-top-perso{
+      padding: 0%;
+    }
+  }
   a.home_dossier h2 {
     color: #fff;
     margin-bottom: -8px;
