@@ -334,7 +334,7 @@ footer p {
 
 @media screen and (min-width: 760px) {
   footer{
-    height: 60vh;
+    height: 45vh;
   }
 
   .form_footer{
@@ -370,14 +370,8 @@ footer p {
   .social_footer_ul li a {
     margin: 0 20px;
   }
-}
 
 
-
-@media screen and (min-width: 1200px) {
-  footer{
-    height: 60vh;
-  }
 
   .container_bottom_border{
     width: 45%;
@@ -405,6 +399,13 @@ footer p {
 }
 
 }
+
+
+
+@media screen and (min-width: 1200px) {
+  footer{
+    height: 60vh;
+  }
 
 
 
