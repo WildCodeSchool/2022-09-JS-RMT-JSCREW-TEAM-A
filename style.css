@@ -128,6 +128,7 @@ nav {
     height: 100vh;
     top: 8vh;
     flex-direction: column;
+    justify-content: space-evenly;
     align-items: center;
     width:50%;
     z-index: 100;
@@ -572,4 +573,13 @@ article.stanLee  {
     display: inline-block;
     padding: 7px 15px 6px 15px;
     position: relative;
+  }
+  @media (max-width: 768px) {
+    .dossier {
+      font-size: 0.9em;
+    }
+    .stanLee p {
+      margin-top: 20px;
+      padding: 0;
+    }
   }
