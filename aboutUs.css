@@ -4,8 +4,207 @@
     padding: 0;
 }
 
+/* font pour le background: css */
+
+header {
+
+    font-family: 'Marvel', sans-serif;
+}
+
+h2,
+h3,
+p {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* background: css */
+
+h1 {
+    font-family: 'Open Sans', sans-serif;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 12em;
+    text-align: center;
+    color: Transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    background-image: linear-gradient(to bottom, #ff0000 10%, transparent 100%);
+    margin-top: 0;
+}
+
+.title-marvel {
+    display: flex;
+    justify-content: center;
+}
+
+.logo {
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 20px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+    background-color: #000000eb;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: space-around;
+    width: 30%;
+
+}
+
+.nav-links li {
+    list-style: none;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: rgb(256, 256, 256);
+    font-size: 18px;
+    letter-spacing: 3px;
+    font-weight: 700;
+    font-family: 'Marvel', sans-serif;
+
+}
+
+.nav-links a:hover {
+    color: #ff0000;
+    transition: 0.5s;
+}
+
+.burger {
+    display: none;
+    cursor: pointer;
+}
+
+.burger div {
+    width: 25px;
+    height: 3px;
+    background-color: rgb(256, 256, 256);
+    margin: 5px;
+    transition: all 0.3s ease;
+}
+
+
+.background {
+
+    background-image: url('./images/background-unsplash.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 70vh;
+    justify-content: center;
+    align-items: center;
+    background-position: center;
+    bottom: 14%;
+    z-index: -1;
+
+}
+
+
+
+/* Responsive Media Queries Nav header */
+@media (max-width: 1200px) {
+    .nav-links {
+        width: 60%;
+    }
+}
+
+
+@media (max-width: 768px) {
+
+    body {
+        overflow-x: hidden;
+    }
+
+    .nav-links {
+        position: absolute;
+        right: 0;
+        background-color: #000000eb;
+        display: flex;
+        height: 100vh;
+        top: 8vh;
+        flex-direction: column;
+        align-items: center;
+        width: 50%;
+        z-index: 100;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+    }
+
+    .burger {
+        display: block;
+        position: absolute;
+        right: 2rem;
+
+    }
+}
+
+.nav-active {
+    transform: translateX(0%);
+}
+
+@keyframes nakLinkFade {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+.toggle .line1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.toggle .line2 {
+    opacity: 0;
+}
+
+.toggle .line3 {
+    transform: rotate(45deg) translate(-5px, -6px);
+}
+
+/*===============Responsive Media Queries Nav header =============================*/
+
+@media (max-width: 1024px) {
+    h1 {
+        font-size: 12em;
+    }
+}
+
+@media (max-width: 780px) {
+    h1 {
+        font-size: 7em;
+    }
+}
+
+@media (max-width: 448px) {
+    h1 {
+        font-size: 5em;
+    }
+}
+
+@media (max-width: 385px) {
+    h2.inline-author {
+        font-size: 1.2em;
+    }
+}
+
+
+/* CSS MANU*/
 body {
     background-color: #0a5d72;
+    margin: 0;
+    padding: 0;
 
 }
 
@@ -171,3 +370,5 @@ body {
         height: 3rem;
     }
 }
+
+/*FIN CSS MANU*/
