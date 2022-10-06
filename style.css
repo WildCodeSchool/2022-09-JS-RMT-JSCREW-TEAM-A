@@ -131,6 +131,7 @@ nav {
     height: 100vh;
     top: 8vh;
     flex-direction: column;
+    justify-content: space-evenly;
     align-items: center;
     width:50%;
     z-index: 100;
@@ -312,46 +313,6 @@ div.textperso {
 
 
 /*********** Main Homepage **************/
-
-
-
-
-
-
-@media screen and (min-width: 600px) {
-  .personnages {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    flex: 1;
-    }
-  .StanLee {
-    display: flex;
-    flex: 1;
-    grid-column-start: 1;
-    grid-column-end: 3;
-  }
- .spiderman {
-display: flex;
-flex: 1;
- }
- .batman {
-  display: flex;
-  flex: 1;
- }
- .hulk {
-  display: flex;
-  flex: 1;
- }
- .thor {
-  display: flex;
-  flex: 1;
- }
- .wolverine {
-  display: flex;
-  flex: 1;
- }
-}
-
 
 /*CARROUSEL*/
 
@@ -665,7 +626,7 @@ label img {
   width: 20px;
 }
 
-article {
+article.stanLee  {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
@@ -706,9 +667,16 @@ article {
   margin: 0 auto;
   width: 100%;
   max-width: 1240px;
-}
+  display: flex;
+  flex-wrap: wrap;
 
-  a.home_dossier {
+}
+@media (max-width: 768px) {
+.container-dossier {
+  padding: 0%;
+}
+}
+  a.home-dossier {
     display: inline-block;
     text-align: center;
     background-size: cover;
@@ -716,6 +684,80 @@ article {
     position: relative;
     color: #fff;
     width: 50%;
-    height: 363px;
+    height: 60vh;
     cursor: pointer;
+    overflow: hidden;
   }
+  @media (max-width: 768px) {
+    a.home-dossier {
+    display: block;
+    width: 100%;
+    height: auto;
+    }
+  }
+  a.home-dossier:hover {
+   transition:ease-in 0.3s;
+   color: blue;
+  } 
+  .home-top-perso {
+    position: absolute;
+    top: 100px;
+  }
+
+
+  a.home-dossier .home-top-mask {
+    background-image: url('./images/home-top-mask.png');
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0px;
+    top: 0px;
+    background-position: bottom center;  
+  }
+
+  a.home-dossier .home-top-perso {
+    position: absolute;
+    width: 100%;
+    padding: 1.4rem;
+    bottom: 0px;
+    left: 0px;
+  }
+  a.home-dossier .home-top-date {
+    position: absolute;
+    width: 100%;
+    padding: 1.4rem;
+    bottom: 0px;
+    left: 0px;
+  }
+  @media (max-width: 768px) {
+    a.home-dossier .home-top-perso{
+      padding: 0%;
+    }
+  }
+  a.home_dossier h2 {
+    color: #fff;
+    margin-bottom: -8px;
+    font-size: 0.92rem;
+    line-height: 0.95rem;
+    transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+  }
+
+  .home-auteur {
+    font-size: 0.95rem;
+    text-transform: uppercase;
+    font-weight: 300;
+    font-family: 'Open Sans', sans-serif;
+    display: inline-block;
+    padding: 7px 15px 6px 15px;
+    position: relative;
+  }
+  @media (max-width: 768px) {
+    .dossier {
+      font-size: 0.9em;
+    }
+    .stanLee p {
+      margin-top: 20px;
+      padding: 0;
+    }
+  }
+

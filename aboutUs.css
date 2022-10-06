@@ -1,0 +1,374 @@
+* ::before ::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* font pour le background: css */
+
+header {
+
+    font-family: 'Marvel', sans-serif;
+}
+
+h2,
+h3,
+p {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* background: css */
+
+h1 {
+    font-family: 'Open Sans', sans-serif;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 12em;
+    text-align: center;
+    color: Transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    background-image: linear-gradient(to bottom, #ff0000 10%, transparent 100%);
+    margin-top: 0;
+}
+
+.title-marvel {
+    display: flex;
+    justify-content: center;
+}
+
+.logo {
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 20px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+    background-color: #000000eb;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: space-around;
+    width: 30%;
+
+}
+
+.nav-links li {
+    list-style: none;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: rgb(256, 256, 256);
+    font-size: 18px;
+    letter-spacing: 3px;
+    font-weight: 700;
+    font-family: 'Marvel', sans-serif;
+
+}
+
+.nav-links a:hover {
+    color: #ff0000;
+    transition: 0.5s;
+}
+
+.burger {
+    display: none;
+    cursor: pointer;
+}
+
+.burger div {
+    width: 25px;
+    height: 3px;
+    background-color: rgb(256, 256, 256);
+    margin: 5px;
+    transition: all 0.3s ease;
+}
+
+
+.background {
+
+    background-image: url('./images/background-unsplash.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 70vh;
+    justify-content: center;
+    align-items: center;
+    background-position: center;
+    bottom: 14%;
+    z-index: -1;
+
+}
+
+
+
+/* Responsive Media Queries Nav header */
+@media (max-width: 1200px) {
+    .nav-links {
+        width: 60%;
+    }
+}
+
+
+@media (max-width: 768px) {
+
+    body {
+        overflow-x: hidden;
+    }
+
+    .nav-links {
+        position: absolute;
+        right: 0;
+        background-color: #000000eb;
+        display: flex;
+        height: 100vh;
+        top: 8vh;
+        flex-direction: column;
+        align-items: center;
+        width: 50%;
+        z-index: 100;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+    }
+
+    .burger {
+        display: block;
+        position: absolute;
+        right: 2rem;
+
+    }
+}
+
+.nav-active {
+    transform: translateX(0%);
+}
+
+@keyframes nakLinkFade {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+.toggle .line1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.toggle .line2 {
+    opacity: 0;
+}
+
+.toggle .line3 {
+    transform: rotate(45deg) translate(-5px, -6px);
+}
+
+/*===============Responsive Media Queries Nav header =============================*/
+
+@media (max-width: 1024px) {
+    h1 {
+        font-size: 12em;
+    }
+}
+
+@media (max-width: 780px) {
+    h1 {
+        font-size: 7em;
+    }
+}
+
+@media (max-width: 448px) {
+    h1 {
+        font-size: 5em;
+    }
+}
+
+@media (max-width: 385px) {
+    h2.inline-author {
+        font-size: 1.2em;
+    }
+}
+
+
+/* CSS MANU*/
+body {
+    background-color: #0a5d72;
+    margin: 0;
+    padding: 0;
+
+}
+
+.container {
+    border-radius: 5px;
+    padding: 5%;
+}
+
+.containerOnglets {
+    width: 90%;
+    height: 3.5rem;
+    display: flex;
+    margin: auto;
+}
+
+.onglet {
+    width: 33%;
+    height: 100%;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: #bfb6c5;
+    color: #061c27;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.containerContenu {
+    text-align: center;
+}
+
+.contenu {
+    display: none;
+    width: 90%;
+    background-color: #bfb6c5;
+    color: #061c27;
+    border-radius: 5px;
+}
+
+.contenu:nth-child(1)>p {
+    font-size: 1.5rem;
+}
+
+.contenu:nth-child(1) ul {
+    padding: 0;
+}
+
+.contenu:nth-child(1) li {
+    list-style-type: none;
+    margin-top: 10%;
+    margin-bottom: 20%;
+}
+
+.contenu:nth-child(1) li>p {
+    font-size: 2rem;
+    font-family: 'Marvel', sans-serif;
+    font-weight: bold;
+}
+
+.contenu:nth-child(1) a {
+    font-size: 1.5rem;
+    cursor: pointer;
+    text-decoration: none;
+    color: #061c27;
+    display: block;
+    width: 6rem;
+    border-radius: 10px;
+    text-align: center;
+    background: linear-gradient(#bfb6c5, #0a5d72);
+    margin: auto;
+    line-height: 3rem;
+
+
+
+}
+
+.contenu:nth-child(1) a:hover {
+    background: linear-gradient(#0a5d72, #bfb6c5);
+}
+
+.contenu:nth-child(2) p {
+    font-size: 1.5rem;
+    padding: 0px 10px 0 10px;
+    text-align: center;
+}
+
+.contenu:nth-child(2) a {
+    text-decoration: none;
+    color: #0a5d72;
+    font-size: 1.5rem;
+    transition: all 0.5s ease;
+}
+
+.contenu:nth-child(2) a:hover {
+    color: purple;
+    text-decoration: underline;
+}
+
+.active {
+    color: #bfb6c5;
+    background-color: #061c27;
+    transition: all 0.3s ease;
+}
+
+.activeContenu {
+    display: inline-block;
+    animation: fade 0.5s forwards;
+}
+
+@keyframes fade {
+    from {
+        display: none;
+    }
+
+    To {
+        display: inline-block;
+    }
+}
+
+@media all and (min-width: 800px) {
+
+    .contenu:nth-child(1) ul {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+
+    .contenu:nth-child(1)>p {
+        font-size: 2.5rem;
+    }
+
+    .contenu:nth-child(1) li>p {
+        font-size: 2.2rem;
+        margin: 0;
+        margin-top: 10px;
+    }
+
+    .contenu:nth-child(1) li {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 14rem;
+        width: 40%;
+        margin: 0;
+    }
+
+    .contenu:nth-child(2) p {
+        font-size: 2rem;
+        padding: 0px 10px 0 10px;
+    }
+
+
+    .contenu:nth-child(1) li p,
+    a {
+        padding: 0;
+    }
+
+    .contenu:nth-child(2) a {
+        font-size: 2rem;
+    }
+
+    .contenu:nth-child(1) a {
+        height: 3rem;
+    }
+}
+
+/*FIN CSS MANU*/
