@@ -39,25 +39,26 @@
         <!-- ---------------Formulaire------------- -->
         <form action="" method="get" class="form_footer">
           <h5 class="h5_form">Contact</h5>
-          <div class="form_personnel">
-            <div class="form_name">
-              <input class="inputfoot" type="text" name="name" id="nameinput" placeholder=" Lastname" required>
+          <div class="form_container">
+            <div class="form_personnel">
+              <div class="form_name">
+                <input class="inputfoot" type="text" name="name" id="nameinput" placeholder=" Lastname" required>
+              </div>
+              <div class="form_forname">
+                <input class="inputfoot" type="text" name="name" id="fornameinput" placeholder=" Forname" required>
+              </div>
+              <div class="form_mail">
+                <input class="inputfoot" type="email" name="email" id="emailinput" placeholder=" Email" required>
+              </div>
             </div>
-            <div class="form_forname">
-              <input class="inputfoot" type="text" name="name" id="fornameinput" placeholder=" Forname" required>
-            </div>
-            <div class="form_mail">
-              <input class="inputfoot" type="email" name="email" id="emailinput" placeholder=" Email" required>
+            <div class="form_text">
+              <textarea class="inputarea" name="texte_area" id="" cols="30" rows="5"
+                placeholder="Please leave your message here" required></textarea>
             </div>
           </div>
-          <div class="form_text">
-            <textarea class="inputarea" name="texte_area" id="" cols="23" rows="5"
-              placeholder="Please leave your message here" required></textarea>
-          </div>
-          <div class="submit_form">
+          <!-- <div class="submit_form"> -->
             <input type="submit" value=" Submit " class="form_submit">
-          </div>
-
+          <!-- </div> -->
         </form>
       </div>
 
