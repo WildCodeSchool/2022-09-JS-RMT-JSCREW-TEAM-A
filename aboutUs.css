@@ -397,11 +397,12 @@ footer{
     
     .footer_bottom_ul {
         width: 100%;
-       
+       text-align: center;
     }
     
     .social_footer_ul{
         width:100%;
+        text-align: center;
     }
 
     .footer_copy p{
