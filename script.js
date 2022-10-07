@@ -30,25 +30,4 @@ burger.addEventListener('click', () => {
 navSlide();
 
 
-/*AJOUT SON IMAGE FICHEPERSO*/
-
-/*CHERCHEZ PAS C'EST PETE O_O*/
-
-let image = document.getElementById('imgperso'); // on récupère l'élément qui sera survolé pour jouer le son
-let son = document.getElementById('son'); // on récupère l'élément <audio>
- 
-image.onmouseover = function play(){ // lorsque le div est survolé
-    son.play(); // on joue le son
-};
- 
-image.onmouseout = function pause(){ // lorsque la souris quitte le div
-    son.pause(); // on met en pause le son
-    son.currentTime() = 0;
-};
-
-play();
-pause();
-
-/* \Ö/ \Ö/ \Ö/ \Ö/ \Ö/ \Ö/ \Ö/ \Ö/ \Ö/ \Ö/ */
-/*  |   |   |   |   |   |   |   |   |   |  */
-/* / \ / \ / \ / \ / \ / \ / \ / \ / \ / \ */                        
+                      
