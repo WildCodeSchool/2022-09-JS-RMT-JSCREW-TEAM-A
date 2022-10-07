@@ -1,0 +1,801 @@
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  width: 100%;
+  height:auto;
+}
+/*===============ajout css karim =============================*/
+/* font pour le background: css */
+
+header {
+
+font-family: 'Marvel', sans-serif;
+}
+
+h2,h3,p {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* background: css */
+
+h1{
+  font-family: 'Open Sans', sans-serif;
+  text-transform:uppercase;
+  font-weight: 900;
+  font-size: 18em;
+  text-align: center;
+  color: Transparent;
+  position: absolute;
+  top: 200px;
+  background-clip: text;
+  -webkit-background-clip: text;
+  background-image: linear-gradient(to bottom,#ff0000 10%,transparent 100%)
+
+}
+.title-marvel {
+  display: flex;
+  justify-content: center;
+}
+.logo{
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-size: 20px;
+}
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 8vh;  
+  background-color: #000000eb;
+}
+.nav-links{
+  display: flex;
+  justify-content: space-around;
+  width: 30%;
+
+}
+.nav-links li{
+  list-style: none;
+}
+.nav-links a{
+  text-decoration: none;
+  color: rgb(256, 256, 256);
+  font-size: 18px;
+  letter-spacing: 3px;
+  font-weight: 700;
+  font-family:  'Marvel', sans-serif;
+
+}
+.nav-links a:hover{
+  color: #ff0000;
+  transition: 0.5s;
+}
+.burger{
+  display: none;
+  cursor: pointer;
+}
+.burger div {
+  width:25px;
+  height: 3px;
+  background-color: rgb(256, 256, 256);
+  margin: 5px;
+  transition: all 0.3s ease;
+}
+
+.background{
+    
+  background-image: url('./images/background-unsplash.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 70vh;
+  justify-content: center;
+  align-items: center;
+  background-position:center;
+  bottom: 14%;
+  z-index: -1;
+  
+} 
+
+
+
+/* Responsive Media Queries Nav header */
+@media (max-width: 1200px) {
+  .nav-links {
+      width: 60%;
+  }
+
+  
+
+
+}
+
+
+@media (max-width: 768px) {
+
+  body {
+  overflow-x: hidden;
+}
+  .nav-links {
+    position:absolute;
+    right: 0;
+    background-color:#000000eb ;
+    display: flex;
+    height: 100vh;
+    top: 8vh;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width:50%;
+    z-index: 100;
+    transform: translateX(100%);
+    transition: transform 0.5s ease-in;
+  }
+
+  .burger {
+    display: block;
+    position: absolute;
+    right: 2rem;
+
+  }
+  
+}
+
+.nav-active{
+  transform: translateX(0%);
+}
+
+@keyframes nakLinkFade {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+.toggle .line1 {
+  transform: rotate(-45deg) translate(-5px, 6px);
+} 
+
+.toggle .line2{
+  opacity: 0;
+} 
+
+.toggle .line3{
+  transform: rotate(45deg) translate(-5px, -6px);
+} 
+  
+/*===============Responsive Media Queries Nav header =============================*/
+
+@media (max-width: 1024px) {
+  h1 {
+      font-size: 12em;
+  }
+}
+
+@media (max-width: 780px) {
+    h1 {
+        font-size: 7em;
+    }
+}
+
+@media (max-width: 448px) {
+    h1 {
+        font-size: 5em;
+    }
+}
+
+@media (max-width: 385px) {
+  h2.inline-author {
+      font-size: 1.2em;
+  }
+}
+
+/* =========================fin css karim==================================================*/
+
+
+
+  
+
+
+
+/*GENERAL*/
+
+/* https://www.codeur.com/tuto/css/redimensionner-image-css/ --- aide pour redimensionner une image en CSS*/
+
+/*HEADER*/
+
+
+.testHeader
+{
+    height: 120px;
+    background-color: #444;
+    border-bottom: 2px solid #fff;
+    box-shadow: 0px 0px 15px #333;
+}
+
+
+/*PRESENTATION PERSO*/
+
+
+section.imgprez {
+  text-align: center;
+}
+
+section.prez{
+  width: 100%;
+  height: 100%;
+  /*background-image: url(images/hulk.png);
+  background-size: cover;
+  background-position: center;*/
+  margin-bottom: auto;
+}
+
+div.imgperso img {
+  display:inline-block;
+  object-fit: scale-down;
+  flex: left;
+  max-height: 60vh;
+}
+
+div.textperso {
+  font-family: Arial, Helvetica, sans-serif;
+  margin-left: 5px;
+}
+
+
+/*PAGE CHOIX PERSO*/
+
+
+.choixperso{
+  width: 100%;
+  height: 100%;
+  margin-bottom: auto;
+}
+
+.choixperso h2{
+  text-align: center;
+  margin-bottom: 20px;
+  font-family: 'Marvel', sans-serif;
+}
+
+.choixperso div{
+  width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+ 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+  
+  border: 2px solid black ;
+  border-radius: 10px;
+}
+
+.choixperso img{
+  object-fit: scale-down;
+  flex: left;
+  height: 400px;
+}
+
+#choixperso{ /*bouton choisir*/
+  color: white; 
+  font-size: 16px; 
+  line-height: 16px; 
+  padding: 6px; 
+  border-radius: 10px; 
+  
+  background-color: #0a5d72;
+  box-shadow: rgb(0, 0, 0) 5px 5px 15px 5px; border: 2px solid rgb(28, 110, 164); 
+  display: inline-block;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+  
+  font-family: 'Marvel', sans-serif;
+}
+
+#choixperso:hover{
+  background-color: #3f78a4;
+}
+
+
+/*********** Main Homepage **************/
+
+/*CARROUSEL*/
+
+@import url("https://fonts.googleapis.com/css?family=DM+Sans:400,500,700&display=swap");
+
+
+section.carrousel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 10px;
+  font-family: 'DM Sans', sans-serif;
+  transition: background .4s ease-in;
+  background-color: #ededed;
+
+}
+
+input[type=radio] {
+  display: none;
+}
+
+.card {
+  position: absolute;
+  width: 60%;
+  height: 100%;
+  left: 0;
+  right: 0;
+  margin: auto;
+  transition: transform .4s ease;
+  cursor: pointer;
+}
+
+.container {
+  width: 300px;
+  /*max-width: 800px;
+  max-height: 1000px;*/
+  height: 300px;
+  transform-style: preserve-3d;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cards {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  margin-bottom: 20px;
+}
+
+label img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+  object-position: top;
+
+}
+
+#item-1:checked~.cards #song-3,
+#item-2:checked~.cards #song-1,
+#item-3:checked~.cards #song-2 {
+  transform: translatex(-40%) scale(.8);
+  opacity: .4;
+  z-index: 0;
+}
+
+#item-1:checked~.cards #song-2,
+#item-2:checked~.cards #song-3,
+#item-3:checked~.cards #song-1 {
+  transform: translatex(40%) scale(.8);
+  opacity: .4;
+  z-index: 0;
+}
+
+#item-1:checked~.cards #song-1,
+#item-2:checked~.cards #song-2,
+#item-3:checked~.cards #song-3 {
+  transform: translatex(0) scale(1);
+  opacity: 1;
+  z-index: 1;
+}
+
+#achat {
+  color: white; 
+  font-size: 16px; 
+  line-height: 16px; 
+  padding: 6px; 
+  border-radius: 10px; 
+  
+  background-color: #0a5d72;
+  box-shadow: rgb(0, 0, 0) 5px 5px 15px 5px; border: 2px solid rgb(28, 110, 164); 
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+#achat:hover{
+  background-color: #3f78a4;
+}
+
+/*FOOTER*/
+
+
+
+.testFooter
+{
+    height: 260px;
+    background-color: #444;
+    border-top: 2px solid #fff;
+    box-shadow: 0px 0px 15px #333;
+}
+
+
+
+/*VERSION BUREAU*/
+
+@media screen and (min-width: 760px) {
+  .imgperso img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+    /*réglages hauteur image pour visage non centré*/
+  }
+
+  .container {
+    height: 400px;
+    width: 400px;
+  }
+
+  label img {
+    object-fit: fill;
+    background-image: cover;
+  }
+
+  section.prez{
+    
+    align-items: center;
+    display: flex;
+    flex: auto;
+    
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+  }
+  
+  div.imgperso img {
+    max-height: 60vh;
+    width: 100%;
+    object-fit: scale-down;
+    
+  }
+  
+  div.textperso {
+    width:100%;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 5px;
+    
+  }
+
+  .choixperso{
+    height: 100%;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+
+  .choixperso div{
+    width: 200px;
+    margin-left: 10px;
+    margin-right: 10px;  
+  }
+
+  .grilleperso{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width:60%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+}
+
+@media screen and (min-width: 1200px) {
+  .imgperso img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+    /*réglages hauteur image pour visage non centré*/
+  }
+
+  .container {
+    height: 600px;
+    width: 600px;
+  }
+
+  label img {
+    object-fit: fill;
+    background-image: cover;
+  }
+
+  section.prez{
+    height: 100%;
+    align-items: center;
+    display: flex;
+    flex: auto;
+    
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+  }
+  
+  div.imgperso img {
+    max-height: 100vh;
+    width: 100%;
+    object-fit: scale-down;
+    
+  }
+  
+  div.textperso {
+    width:100%;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 20px;
+    
+  }
+
+  .choixperso{
+    height: 100%;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+
+  .choixperso div{
+    width:100%;
+    margin-left: 10px;
+    margin-right: 10px;  
+  }
+
+  .grilleperso{
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+}
+  
+/* Accueil Version desktop karim*/
+
+.content-perso{
+  padding: 45px 20px 0;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1240px;
+}
+
+.inline {
+  position: relative;
+  width: 100%;
+  -webkit-box-align: baseline;
+  -ms-flex-align: baseline;
+  align-items: baseline;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin-bottom:50px ;
+}
+ h2.inline-author {
+  font-weight: 800;
+  font-size:  1.6em;
+  line-height: 1;
+  font-family: "Montserrat",sans-serif;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.inline-author::before {
+  left: 52px;
+  top: 1px;
+  -webkit-transform-origin: left bottom;
+  transform-origin: left bottom;
+}
+
+.inline-author::after {
+  left: 16px;
+  top: 37px;
+  -webkit-transform-origin: left bottom;
+  transform-origin: left bottom;
+}
+
+.inline-author::after, .inline-author::before {
+  background-color: #c6a972;
+  content: "";
+  display: block;
+  height: 2px;
+  position: absolute;
+  -webkit-transform: rotate(-45deg) skewX(45deg);
+  transform: rotate(-45deg) skewX(45deg);
+  width: 20px;
+}
+
+article.stanLee  {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: start;
+  width:100%;
+  padding: 0 20px;
+
+}
+.stanLee {
+  width: 100%;
+  margin-bottom: 100px;
+
+
+}
+.stanLee p {
+  flex: 1;
+  font-size: 1.2em;
+  padding: 0 20px;
+  line-height: 1;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+}
+
+.dossier{
+  border-bottom: 1px solid #c6a972;
+  color: #000;
+  text-transform: uppercase;
+  font-family: 'Marvel', sans-serif;
+  font-weight: 300;
+  font-size: 1.4rem;
+  line-height: 0.95rem;
+  padding: 0.5rem 0.95rem 0.95rem 0.95rem;
+  margin-bottom: 8px;
+}
+
+.container-dossier {
+  padding: 45px 20px 0;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1240px;
+  display: flex;
+  flex-wrap: wrap;
+
+}
+
+a.effect-over {
+  transition: .5s ease;
+} 
+
+.overlay {
+  transition: .5s ease;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.home-dossier {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+
+}
+
+.home-dossier:hover .effect-over {
+  opacity: 0.3;
+}
+
+.home-top-dossier:hover {
+  opacity: 1;
+}
+
+
+/* @media screen and (orientation: landscape) {
+  .title-marvel h1 {
+   top:30px;
+   font-size: 6em;
+  }
+  nav {height: 5.5em;}
+} */
+
+@media (max-width: 768px) {
+.container-dossier {
+  padding: 0%;
+}
+}
+  a.home-dossier {
+    display: inline-block;
+    text-align: center;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+    color: #fff;
+    width: 50%;
+    height: 60vh;
+    cursor: pointer;
+    overflow: hidden;
+  }
+  @media (max-width: 768px) {
+    a.home-dossier {
+    display: block;
+    width: 100%;
+    height: auto;
+    }
+  }
+  a.home-dossier:hover {
+   transition:ease-in 0.3s;
+   color: rgb(0, 110, 255);
+  } 
+  .home-top-perso {
+    position: absolute;
+    top: 100px;
+  }
+
+
+  a.home-dossier .home-top-mask {
+    background-image: url('./images/home-top-mask.png');
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0px;
+    top: 0px;
+    background-position: bottom center;  
+  }
+
+  a.home-dossier .home-top-perso {
+    position: absolute;
+    width: 100%;
+    padding: 1.4rem;
+    /* bottom: 0px;
+    left: 0px; */
+  }
+  a.home-dossier .home-top-date {
+    position: absolute;
+    width: 100%;
+    padding: 1.4rem;
+    bottom: 0px;
+    left: 0px;
+  }
+  @media (max-width: 768px) {
+    a.home-dossier .home-top-perso{
+      padding: 0%;
+    }
+  }
+  a.home_dossier h2 {
+    color: #fff;
+    margin-bottom: -8px;
+    font-size: 0.92rem;
+    line-height: 0.95rem;
+    transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+  }
+
+  .home-auteur {
+    font-size: 0.95rem;
+    text-transform: uppercase;
+    font-weight: 300;
+    font-family: 'Open Sans', sans-serif;
+    display: inline-block;
+    padding: 7px 15px 6px 15px;
+    position: relative;
+  }
+  @media (max-width: 768px) {
+    .dossier {
+      font-size: 0.9em;
+    }
+    .stanLee p {
+      margin-top: 20px;
+      padding: 0;
+    }
+  }
+
