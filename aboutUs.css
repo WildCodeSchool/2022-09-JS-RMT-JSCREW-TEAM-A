@@ -315,6 +315,23 @@ body {
     animation: fade 0.5s forwards;
 }
 
+footer{
+    height: 800px;
+}
+
+.container_form {
+    width: 90%;
+  }
+
+.footer_bottom_ul {
+    width: 80%;
+   
+}
+
+.social_footer_ul{
+    width:80%;
+}
+
 @keyframes fade {
     from {
         display: none;
@@ -370,6 +387,29 @@ body {
     .contenu:nth-child(1) a {
         height: 3rem;
     }
+
+    footer{
+        height: 400px;
+    }
+
+    .container_form {
+        width: 100%;
+      }
+    
+    .footer_bottom_ul {
+        width: 100%;
+       text-align: center;
+    }
+    
+    .social_footer_ul{
+        width:100%;
+        text-align: center;
+    }
+
+    .footer_copy p{
+        margin-left: 50px;
+    }
+
 }
 
 /*FIN CSS MANU*/
